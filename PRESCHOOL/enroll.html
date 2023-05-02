@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarKids</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="kiddies.css">
+</head>
+<body>
+    
+
+    <section class="enroll-form" id="enroll-form">
+        
+
+        <form id="form-enroll">
+            <div class="imgcontainer">
+              <a href="index.html"><img src="Kids-Images/logo.png" alt="Avatar" class="avatar"></a>
+            </div>
+          
+            <div id="msg"></div>
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" id="name" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" id="myPassword" required>
+              <label class="showpsw">
+                <input type="checkbox" name="showpsw" onclick="togglePassword()"> Show password
+              </label>
+                  
+              <button type="submit" class="login-btn">Login</button>
+              
+            </div>
+          
+            <div class="container">
+              <button type="button" class="cancel-btn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+
+
+
+            <!-- <div class="form-title">
+                <p>Log in</p>
+                <div class="no-account"> Don't have an account, <a href="signup.html" id="sign-up" class="sign-up" onclick="signUp()">  Register?</a></div> 
+            </div>
+
+            <form action="">
+                <div class="form-order">
+                    <label for="email">Full Name</label>
+                    <input type="text" id="fname" name="" placeholder="E.g John Doe "> 
+                </div>
+
+                <div class="form-order">
+                    <label for="email">Email Address</label>
+                    <input type="text" id="fname" name="email" placeholder="E.g johndoe@gmail.com"> 
+                </div>
+
+                <div class="form-order">
+                    <label for="email">Phone number</label>
+                    <input type="number" id="fname" name="email" placeholder="E.g 08033445566"> 
+                </div>
+    
+                <div class="form-order">
+                    <label for="psw">Password</label>
+                    <input type="password" placeholder="Enter your password" id="password" name="psw" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}" 
+                    title= "Must contain at least one uppercase, a lowercase, at least 8 characters, a digit" required> <br>
+                </div>
+                
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="remember" id="remember">
+                    <label class="form-check-label" for="remember">Show password</label>
+                </div> 
+    
+                <button type="submit" id="login-btn" onclick="loginClose()">Log in</button> <br>
+                
+            </form>
+    </div> -->
+    </section>
+
+    
+    <script src="kiddies.js"></script>
+</body>
+</html>
